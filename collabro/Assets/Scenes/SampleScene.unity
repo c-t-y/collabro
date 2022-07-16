@@ -219,6 +219,7 @@ GameObject:
   - component: {fileID: 1987175220}
   - component: {fileID: 1987175219}
   - component: {fileID: 1987175218}
+  - component: {fileID: 1987175222}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -259,7 +260,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 590e71c2bfb72452dad446dd985d77ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  bulletPrefab: {fileID: 2207450048093630106, guid: 30d1eda7746c34af4ace1c3d9bb1a55e, type: 3}
+  playerSpeed: 7
+  allowFire: 1
+  bulletSpeed: 200
+  fireRate: 0.25
 --- !u!212 &1987175220
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -327,3 +332,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1987175222
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987175217}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
