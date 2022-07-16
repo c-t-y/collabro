@@ -6,10 +6,12 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb;
     public float speed;
+    public bool allowFire;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        allowFire = true;
     }
 
     // Update is called once per frame
@@ -22,5 +24,3 @@ public class PlayerController : MonoBehaviour
     }
 }
 
-
-// testing testing
